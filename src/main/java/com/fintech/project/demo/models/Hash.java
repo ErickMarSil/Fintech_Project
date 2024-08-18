@@ -1,4 +1,4 @@
-package erick.martins.models;
+package com.fintech.project.demo.models;
 
 // Database importation
 import jakarta.persistence.Entity;
@@ -8,7 +8,6 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.Id;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.ForeignKey;
 
 @Entity
 @Table(name="Hash")

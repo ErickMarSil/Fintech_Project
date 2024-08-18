@@ -1,4 +1,4 @@
-package erick.martins.controll;
+package com.fintech.project.demo.controll;
 
 public class HashControll {
     String hash_password;

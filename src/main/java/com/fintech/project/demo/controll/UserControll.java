@@ -1,13 +1,14 @@
-package erick.martins.controll;
+package com.fintech.project.demo.controll;
 
 // Generic importation
 import java.sql.Date;
 
 // Type importation
-import erick.martins.config.Enums.User_Type;
+import com.fintech.project.demo.enviroment.Enums.User_Type;
 
 // Table association importation
-import erick.martins.models.Hash;
+//import erick.martins.models.Hash;
+
 
 public class UserControll {
     Integer cd_cpf;
