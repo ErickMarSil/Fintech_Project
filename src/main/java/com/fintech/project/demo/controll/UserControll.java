@@ -6,9 +6,15 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
 // Type importation
-import com.fasterxml.jackson.databind.JsonNode;
 
 // Table association importation
+
+// Hibernate controll
+import com.fasterxml.jackson.databind.JsonNode;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+import javax.security.auth.login.Configuration;
 
 
 // User login actions
@@ -28,6 +34,7 @@ public class UserControll implements UserControlAction {
     int user_type;
 
     public UserControll(JsonNode Json){
+
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'");
 
         this.cd_cpf =       Json.get("cd_cpf").asText();
