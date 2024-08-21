@@ -2,10 +2,14 @@ package com.fintech.project.demo.controll;
 
 // Generic importation
 import java.sql.Date;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+
 // Type importation
-import com.fintech.project.demo.enviroment.Enums.User_Type;
+import com.fasterxml.jackson.databind.JsonNode;
+
 // Table association importation
-import com.fintech.project.demo.models.Hash;
+
 
 // User login actions
 interface UserControlAction{
@@ -21,16 +25,23 @@ public class UserControll implements UserControlAction {
     String password;
     Date birth_date;
     String nm_phone;
-    User_Type user_type;
-    public UserControll(String cd_cpf, String first_name, String last_name, String email, String password, Date birth_date, String nm_phone, User_Type user_type) {
-        this.cd_cpf = cd_cpf;
-        this.first_name = first_name;
-        this.last_name = last_name;
-        this.email = email;
-        this.password = password;
-        this.birth_date = birth_date;
-        this.nm_phone = nm_phone;
-        this.user_type = user_type;
+    int user_type;
+
+    public UserControll(JsonNode Json){
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'");
+
+        this.cd_cpf =       Json.get("cd_cpf").asText();
+        this.first_name =   Json.get("first_name").asText();
+        this.last_name =    Json.get("last_name").asText();
+        this.email =        Json.get("email").asText();
+        this.password =     Json.get("password").asText();
+        try {
+            this.birth_date = (Date) dateFormat.parse(Json.get("birth_date").asText());
+        } catch (ParseException e) {
+            throw new RuntimeException(e);
+        }
+        this.nm_phone =     Json.get("nm_phone").asText();
+        this.user_type =    Json.get("user_type").asInt();
     }
 
     @Override

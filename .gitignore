@@ -1,5 +1,6 @@
 HELP.md
 target/
+para_o_professor.txt
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/

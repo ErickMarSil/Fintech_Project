@@ -1,16 +1,17 @@
 package com.fintech.project.demo.endpoints;
 
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fintech.project.demo.controll.UserControll;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
-
-import com.fintech.project.demo.services.UserActions.Login_Action;
 
 @RestController
 public class LoginBP {
     @PostMapping("/login")
-    public boolean loginBP(){
+    public boolean loginBP(@RequestBody JsonNode Json){
         // Return the login action result by blueprint
-        Login_Action loginAction = new Login_Action();
-        return loginAction.login();
+        UserControll loginAction = new UserControll(Json);
+        return loginAction.LoginAction();
     }
 }
