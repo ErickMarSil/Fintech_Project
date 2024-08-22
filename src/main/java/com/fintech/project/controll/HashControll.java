@@ -1,4 +1,4 @@
-package com.fintech.project.demo.controll;
+package com.fintech.project.controll;
 
 public class HashControll {
     String hash_password;

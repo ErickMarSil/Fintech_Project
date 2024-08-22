@@ -1,6 +1,4 @@
-package com.fintech.project.demo.services.UserActions;
-
-import com.fintech.project.demo.controll.UserControll;
+package com.fintech.project.UserActions;
 
 public class Login_Action {
     public Login_Action(String[] data){

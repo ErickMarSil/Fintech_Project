@@ -1,4 +1,4 @@
-package com.fintech.project.demo.models;
+package com.fintech.project.models;
 
 // Database importation
 import jakarta.persistence.Entity;

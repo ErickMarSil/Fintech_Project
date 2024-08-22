@@ -1,4 +1,4 @@
-package com.fintech.project.demo.enviroment.Enums;
+package com.fintech.project.Enums;
 
 public class User_Type{
     Integer UserCostumerPersonal = 1;

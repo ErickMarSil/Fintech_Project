@@ -1,7 +1,7 @@
-package com.fintech.project.demo.endpoints;
+package com.fintech.project.endpoints;
 
 import com.fasterxml.jackson.databind.JsonNode;
-import com.fintech.project.demo.controll.UserControll;
+import com.fintech.project.controll.UserControll;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;

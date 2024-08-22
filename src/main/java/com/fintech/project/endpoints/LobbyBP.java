@@ -1,4 +1,4 @@
-package com.fintech.project.demo.endpoints;
+package com.fintech.project.endpoints;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
