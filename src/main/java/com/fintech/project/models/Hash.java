@@ -21,6 +21,6 @@ public class Hash {
     @Column(name="salt_increment", nullable = false)
     String salt_increment;
     @Column(name="id", nullable = false)
-    @JoinColumn(name="user_id")
+    @JoinColumn(name="user_id", referencedColumnName = "id")
     Long user_id;
 }
