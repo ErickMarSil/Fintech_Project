@@ -1,1 +1,0 @@
-Professor, as informações necessarias para a atividade estão na package "controll" e "endpoints"
