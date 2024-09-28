@@ -1,4 +1,4 @@
-CREATE TABLE Card_Expenses (
+CREATE TABLE Expenses (
     id BIGINT PRIMARY KEY NOT NULL,
     card_id BIGINT NOT NULL,
     expense_date DATE NOT NULL,
