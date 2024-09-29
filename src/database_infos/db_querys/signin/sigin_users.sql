@@ -1,0 +1,2 @@
+INSERT INTO Users (id, cd_cpf, first_name, last_name, email, password, birth_data, nm_phone, user_type)
+VALUES (:id, :cd_cpf, :first_name, :last_name, :email, :password, :birth_data, :nm_phone, :user_type);

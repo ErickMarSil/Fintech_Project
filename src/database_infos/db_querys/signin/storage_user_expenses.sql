@@ -1,0 +1,2 @@
+INSERT INTO Expenses (id, card_id, expense_date, due_date, payment_type, amount, recipient_account_name)
+VALUES (:id, :card_id, :expense_date, :due_date, :payment_type, :amount, :recipient_account_name);

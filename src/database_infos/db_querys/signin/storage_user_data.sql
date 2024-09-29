@@ -1,0 +1,2 @@
+INSERT INTO Account (id, nm_account, nam_account, tp_currency, dt_creation, vl_money, user_id, account_type, status_type)
+VALUES (:id, :nm_account, :nam_account, :tp_currency, :dt_creation, :vl_money, :user_id, :account_type, :status_type);

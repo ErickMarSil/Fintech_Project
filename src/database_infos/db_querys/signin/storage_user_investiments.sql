@@ -1,0 +1,2 @@
+INSERT INTO Investments (id, investment_date, investment_type, amount, expected_return, maturity_date, account_id)
+VALUES (:id, :investment_date, :investment_type, :amount, :expected_return, :maturity_date, :account_id);
